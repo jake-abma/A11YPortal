@@ -36,9 +36,8 @@
     "firebase-tools": "^3.19.3",
     "gulp": "^4.0.0",
     "gulp-axe-webdriver": "^3.0.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-sass": "^4.0.1"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
