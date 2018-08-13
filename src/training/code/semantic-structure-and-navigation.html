@@ -96,7 +96,6 @@
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-kitesurf2"></div>
-      </div>
     </div>
 
     <nav class="full-cover" role="navigation" aria-labelledby="title-toc">
@@ -170,7 +169,7 @@
 
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#user-interface-controls" class="link-ts"><span>User Interface Controls</a></li>
+                  <li><a href="../../basics/essentials/principles.html#user-interface-controls" class="link-ts"><span>User Interface Controls</span></a></li>
                 </ul>
 
               </div>
@@ -313,7 +312,7 @@
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" class="link-ts"><span><title>: The Document Title element - MDN</span></a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" class="link-ts"><span>&lt;title&gt;: The Document Title element - MDN</span></a></li>
                 </ul>
 
               </div>
@@ -736,7 +735,7 @@
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&tags=headings" class="link-ts"><span>"headings" - WCAG Filter</span></a></li>
-                  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/complete.html" class="link-ts"><span>WCAG Techniques</a> - search for "headings"</li>
+                  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/complete.html" class="link-ts"><span>WCAG Techniques</span></a> - search for "headings"</li>
                   <li><a href="https://www.w3.org/TR/html52/dom.html#heading-content" class="link-ts"><span>Heading content - HTML 5.2</span></a></li>
                   <li><a href="https://www.w3.org/TR/wai-aria-1.1/#heading" class="link-ts"><span>Heading (role) WAI ARIA 1.1</span></a></li>
                   <li><a href="https://www.w3.org/TR/html-aam-1.0/#details-id-42" class="link-ts"><span>Headings - HTML AAM</span></a></li>
@@ -1002,11 +1001,11 @@
                   </li>
                   <li>Main site navigation methods
                     <ul>
-                      <li>Add <nav role="navigation"> to the Main Menu</li>
+                      <li>Add &lt;nav role="navigation"&gt; to the Main Menu</li>
                       <li>Never use more than 2 or 3 NAV elements or they will loose value</li>
                       <li>Give menu's accessible names via aria-labelledby</li>
                       <li>Give current link a hidden text of "current"</li>
-                      <li>Only when the role really fits the <a href="https://www.w3.org/TR/wai-aria-1.1/#menu">main menu specification</a> use role="tree" or role="menu". In most cases a <nav> with a <ul> will be the best choice.</li>
+                      <li>Only when the role really fits the <a href="https://www.w3.org/TR/wai-aria-1.1/#menu">main menu specification</a> use role="tree" or role="menu". In most cases a <code>&lt;nav&gt;</code> with a <code>&lt;ul&gt;</code> will be the best choice.</li>
                       <li>Although main navigation may look like tabs, role="tab" is almost always never the proper choice.</li>
                       <li>Provide more than 1 way to locate a Web page
                         <ul>
@@ -1737,7 +1736,7 @@
                   <li>Critical emphasis in the text <span class="badge badge-info">SHOULD</span> be conveyed in a text-based format.</li>
                 </ul>
 
-                <h4 class="heading-s"><code>&lt;strong&gt;<blockquote></strong></code><strong> and <code>&lt;q&gt;</code></strong></h4>
+                <h4 class="heading-s"><code><strong>&lt;blockquote&gt;</strong></code><strong> and <code>&lt;q&gt;</code></strong></h4>
                 <ul class="list-icons list-checklist">
                   <li>The <code>&lt;blockquote&gt;</code> element <span class="badge badge-info">SHOULD</span> be used to designate long (block level) quotations.
                   </li>
@@ -1798,19 +1797,19 @@
                 <ul>
                   <li>Reasonable support</li>
                   <li>write out the full abbreviation the first time that it appears</li>
-                  <li><acronym> is phased out, use <abbr></li>
+                  <li>&lt;acronym&gt; is phased out, use &lt;abbr&gt;</li>
                 </ul>
 
                 <h4 class="heading-s">Elements NOT announced by Screen readers (but still important!)</h4>
                 <ul>
                   <li>Reasonable support</li>
-                  <li><strong> - strong emphasis</li>
-                  <li><em> - emphasis</li>
-                  <li><q> - inline quotation</li>
-                  <li><pre> - preformatted text</li>
-                  <li><code> - computer code (such as HTML, JavaScript, PHP, etc.)</li>
-                  <li><address> - contact information for the creators of a document</li>
-                  <li><time> - date and/or time</li>
+                  <li>&lt;strong&gt; - strong emphasis</li>
+                  <li>&lt;em&gt; - emphasis</li>
+                  <li>&lt;q&gt; - inline quotation</li>
+                  <li>&lt;pre&gt; - preformatted text</li>
+                  <li>&lt;code&gt; - computer code (such as HTML, JavaScript, PHP, etc.)</li>
+                  <li>&lt;address&gt; - contact information for the creators of a document</li>
+                  <li>&lt;time&gt; - date and/or time</li>
                   <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements#x3-5-identifying-elements">LVTF 3.5 Identifying Elements</a></li>
                 </ul>
 
@@ -1819,7 +1818,7 @@
                   <li>Good practice
                     <ul>
                       <li>Increase font size</li>
-                      <li>Make the font bold using <em> and <strong> or CSS</li>
+                      <li>Make the font bold using &lt;em&gt; and &lt;strong&gt; or CSS</li>
                       <li>Change the color of the font (* watch contrast and not only means of conveying important information)</li>
                       <li>Put an outline around the content</li>
                       <li>Put a background color behind the content</li>
@@ -1829,7 +1828,7 @@
                   </li>
                   <li>Bad practice
                     <ul>
-                      <li>Make the font italic using <i> or <em> or CSS</li>
+                      <li>Make the font italic using &lt;i&gt; or &lt;em&gt; or CSS</li>
                       <li>USE ALL CAPITAL LETTERS</li>
                       <li>*Put asterisks around words or phrases*</li>
                     </ul>
