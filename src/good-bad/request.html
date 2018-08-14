@@ -160,9 +160,9 @@
 
       <p>NOTE: All fields in this form are required, unless otherwise specified.</p>
 
-      <h2 class="sr-only" id="navigator-title">Request a credit card with 5 steps</h2>
+      <h2 class="sr-only" id="navigator-title">Request a credit card in 2 steps</h2>
 
-      <h3 class="sr-only" id="steps-title">Personal information (Step 1 of 5)</h3>
+      <h3 class="sr-only" id="steps-title">Personal information (Step 1 of 2)</h3>
 
       <div class="card">
 
@@ -178,32 +178,11 @@
                 </a>
               </li>
               <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">2</span>
-                  <span class="steps-indicator-text">Additional information</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">3</span>
-                  <span class="steps-indicator-text">Comments</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">4</span>
-                  <span class="steps-indicator-text">Check data</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">5</span>
-                  <span class="steps-indicator-text">Data send</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
+                  <span class="steps-indicator-element">
+                    <span class="steps-indicator-type">2</span>
+                    <span class="steps-indicator-text">Additional information</span>
+                    <span class="arrow steps-indicator-arrow"></span>
+                  </span>
               </li>
             </ol>
           </div>
@@ -220,10 +199,10 @@
           </div>
         </div>
 
-        <form class="m-0">
+        <form class="m-0" aria-labelledby="form-title">
           <div class="card-block">
 
-            <h4 class="card-title">Personal information</h4>
+            <h4 class="card-title" id="form-title">Personal information</h4>
 
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
@@ -295,38 +274,11 @@
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-sm-5 col-lg-4">
-                    <input type="text" name="dateOfBirth" id="dateOfBirth" class="form-control" aria-describedby="dateOfBirth-description" aria-required="true">
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control" aria-describedby="dateOfBirth-description" aria-required="true">
                   </div>
                 </div>
                 <div class="form-control-help" id="dateOfBirth-description">
-                  Write as dd-mm-yyyy<span class="sr-only">.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="fieldset-row" role="group">
-              <legend class="legend control-label col-sm-4 col-lg-3" id="genderLegend">
-                <span class="sr-only">Personal data</span> Gender
-              </legend>
-              <div class="col-sm-8 col-lg-6">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="radio-inline radio-custom">
-                      <label for="genderMale">
-                          <input type="radio" name="gender" id="genderMale" value="male" aria-labelledby="genderLegend genderMaleLabel" aria-required="true">
-                          <span class="radio-custom-input" aria-hidden="true"></span>
-                          <span id="genderMaleLabel">Male</span>
-                        </label>
-                    </div>
-                    <div class="radio-inline radio-custom">
-                      <label for="genderFemale">
-                          <input type="radio" name="gender" id="genderFemale" value="female" aria-labelledby="genderLegend genderFemaleLabel" aria-required="true">
-                          <span class="radio-custom-input" aria-hidden="true"></span>
-                          <span id="genderFemaleLabel">Female</span>
-                        </label>
-                    </div>
-
-                  </div>
+                  Write as dd-mm-yyyy
                 </div>
               </div>
             </div>
@@ -344,27 +296,10 @@
                   </div>
                 </div>
                 <div class="form-control-help" id="csn-description">
-                  Consists of 9 numbers<span class="sr-only">.</span>
+                  Consists of 9 numbers
                 </div>
               </div>
             </div>
-
-            <dl class="form-group form-text-only">
-              <dt class="control-label-pseudo col-sm-4 col-lg-3" id="land-label">
-                  Country
-                </dt>
-              <dd class="col-sm-8 col-lg-6" role="definition" aria-labelledby="land-label">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <p class="form-control-pseudo position position-left position-lg">
-                      <span class="position-component">
-                          <img src="../images/flag-america.png" class="img-responsive" width="24" alt="">
-                        </span> America
-                    </p>
-                  </div>
-                </div>
-              </dd>
-            </dl>
 
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
@@ -391,6 +326,60 @@
                 </div>
               </div>
             </div>
+
+
+            <hr>
+
+            <fieldset>
+              <legend class="legend"><h5>Financial information</h5></legend>
+
+              <fieldset>
+                <legend class="sr-only" id="employmentLegend">Employment</legend>
+                <div class="fieldset-row">
+                  <div class="legend control-label col-sm-4 col-lg-3" aria-hidden="true">
+                    Employment
+                  </div>
+                  <div class="col-sm-8 col-lg-6">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="radio-inline radio-custom">
+                          <label for="employmentEmployed">
+                            <input type="radio" name="employment" id="employmentEmployed" value="employed" aria-required="true">
+                            <span class="radio-custom-input" aria-hidden="true"></span>
+                            <span>Employed</span>
+                          </label>
+                        </div>
+                        <div class="radio-inline radio-custom">
+                          <label for="employmentUnemployed">
+                            <input type="radio" name="employment" id="employmentUnemployed" value="employed" aria-required="true">
+                            <span class="radio-custom-input" aria-hidden="true"></span>
+                            <span>Unemployed</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="funds">
+                    Funds
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-10">
+                      <select class="form-control" name="funds" id="funds" aria-required="true" disabled>
+                        <option value="limited">Limited</option>
+                        <option value="unlimited">Unlimited</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
 
             <hr>
 

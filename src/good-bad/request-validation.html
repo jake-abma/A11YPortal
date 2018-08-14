@@ -147,6 +147,30 @@
 
     <div class="container">
 
+      <div class="alert alert-danger alert-block" id="formSummary" accesskey="0" role="group" aria-labelledby="formSummaryHeading" tabindex="-1">
+        <span class="stacked-icon" role="img" aria-label="Errors: ">
+          <span class="icon"></span>
+          <span class="icon"></span>
+        </span>
+        <div class="body-box body-box-sm">
+          <h2 class="heading-m" id="formSummaryHeading">There are 4 errors in this form.</h2>
+          <ul>
+            <li>
+              <a href="#initials">'<strong>Initials</strong>': No initials is entered, please enter up to 6 initials</a>
+            </li>
+            <li>
+              <a href="#insertion">'<strong>Insertion</strong>': An abbreviations is used. Write the insertion completely like 'van der' and not 'v/d'</a>
+            </li>
+            <li>
+              <a href="#gender">'<strong>Gender</strong>': No choice is made yet while required</a>
+            </li>
+            <li>
+              <a href="#csn">'<strong>Citizen service number</strong>': Only 8 numbers are entered</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <p>With this form, you will request a Credit Card. Within 5 business days you'll receive an answer for acceptance. On the <a href="#">Credit Card page</a> you can find more information about the impact of the application for your account.</p>
 
       <strong>Before filling in the form please make sure you have the following items ready:</strong>
@@ -204,7 +228,7 @@
 
             <h4 class="card-title" id="form-title">Personal information</h4>
 
-            <div class="form-group">
+            <div class="form-group has-error invalid">
               <div class="control-label col-sm-4 col-lg-3">
                 <label for="initials">
                   Initials

@@ -16,30 +16,30 @@
         });
     }
 
-    var headings = document.querySelectorAll(".collapsible-control");
+    var headings = document.querySelectorAll('.collapsible-control');
 
     Array.prototype.forEach.call(headings, function (heading) {
-        var btn = heading.querySelector("button");
+        var btn = heading.querySelector('button');
         var target = heading.nextElementSibling;
         btn.onclick = function () {
-            var expanded = btn.getAttribute("aria-expanded") === "true" || false;
-            btn.setAttribute("aria-expanded", !expanded);
+            var expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+            btn.setAttribute('aria-expanded', !expanded);
             target.hidden = expanded;
         };
     });
 
-    var answerButtons = document.querySelectorAll(".answer-button");
+    var answerButtons = document.querySelectorAll('.answer-button');
 
     Array.prototype.forEach.call(answerButtons, function (btn) {
         var target = btn.nextElementSibling;
         btn.onclick = function () {
-            var expanded = btn.getAttribute("aria-expanded") === "true" || false;
-            btn.setAttribute("aria-expanded", !expanded);
+            var expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+            btn.setAttribute('aria-expanded', !expanded);
             target.hidden = expanded;
         };
     });
 
-//    var toggleTriggers = Array.from(document.querySelectorAll('[data-toggle="collapse"]'));
+//    var toggleTriggers = Array.from(document.querySelectorAll('[data-toggle='collapse']'));
 //
 //    window.addEventListener('click', function (ev) {
 //      var elm = ev.target;
@@ -63,7 +63,7 @@
 //      });
 //     };
 //
-//    var modalTriggers = Array.from(document.querySelectorAll('[data-toggle="modal"]'));
+//    var modalTriggers = Array.from(document.querySelectorAll('[data-toggle='modal']'));
 //
 //    window.addEventListener('click', function (ev) {
 //      var elm = ev.target;
@@ -87,3 +87,21 @@
 //     };
 
 })();
+
+function passwordStrength() {
+    var container = document.querySelector('#passwordStrength');
+    var strengths = ['very weak', 'weak', 'good', 'strong', 'very strong'];
+    var random = Math.floor(Math.random() * strengths.length);
+    if (!container.innerHTML) {
+        container.innerHTML = 'The strength of your password is <span id="strength">' + strengths[random] + ' </span>';
+    }
+    else {
+        var strength = document.querySelector('#strength');
+        strength.innerHTML = strengths[random];
+    }
+}
+
+function disableShipping() {
+    var shippingAddress = document.querySelector('#shippingAddress');
+    shippingAddress.hasAttribute('disabled') ? shippingAddress.removeAttribute('disabled') : shippingAddress.setAttribute('disabled', '');
+}
