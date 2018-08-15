@@ -132,8 +132,7 @@
       <div class="container">
         <div class="brandbar-header">
           <div class="brandbar-heading">
-            <h1 class="brandbar-title btn-annot-outline">Draft: Accessible Request Page</h1>
-            <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal01">01</button>
+            <h1 class="brandbar-title">Draft: Accessible Request Page</h1>
             <p class="brandbar-lead">Good and Bad Demonstration</p>
             <span class="d-block mt-2 annot-relative">
               <a href="https://dequeuniversity.com/class/html-css1/forms/" class="link-primary">
@@ -160,6 +159,8 @@
 
       <p>NOTE: All fields in this form are required, unless otherwise specified.</p>
 
+      <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal01">01</button>
+
       <h2 class="sr-only" id="navigator-title">Request a credit card in 2 steps</h2>
 
       <h3 class="sr-only" id="steps-title">Personal information (Step 1 of 2)</h3>
@@ -176,6 +177,7 @@
                   <span class="steps-indicator-text">Personal information</span>
                   <span class="arrow steps-indicator-arrow"></span>
                 </a>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal02">02</button>
               </li>
               <li class="steps-indicator-item">
                   <span class="steps-indicator-element">
@@ -200,20 +202,24 @@
         </div>
 
         <form class="m-0" aria-labelledby="form-title">
+
           <div class="card-block">
 
             <h4 class="card-title" id="form-title">Personal information</h4>
-
+            <button type="button" class="btn btn-annot btn-annot-secondary" data-toggle="modal" data-target="#annotModal03">03</button>
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
                 <label for="initials">
                   Initials
                 </label>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
               </div>
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-sm-5 col-lg-4">
                     <input type="text" name="initials" id="initials" class="form-control" maxlength="12" aria-required="true">
+                    <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal05">05</button>
+
                   </div>
                 </div>
               </div>
@@ -228,7 +234,7 @@
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-md-10">
-                    <input type="text" name="name" id="name" class="form-control" aria-required="true">
+                    <input type="text" name="name" id="name" class="form-control" aria-required="true" autocomplete="given-name">
                   </div>
                 </div>
               </div>
@@ -247,6 +253,7 @@
                   </div>
                 </div>
                 <div class="form-control-help" id="insertion-description">Full writing<span class="sr-only">.</span></div>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal07">06</button>
               </div>
             </div>
 
@@ -259,7 +266,7 @@
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-md-10">
-                    <input type="text" name="surname" id="surname" class="form-control" aria-required="true">
+                    <input type="text" name="surname" id="surname" class="form-control" aria-required="true" autocomplete="family-name">
                   </div>
                 </div>
               </div>
@@ -274,7 +281,8 @@
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-sm-5 col-lg-4">
-                    <input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control" aria-describedby="dateOfBirth-description" aria-required="true">
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control" aria-describedby="dateOfBirth-description" aria-required="true" autocomplete="bday">
+                    <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal06">07</button>
                   </div>
                 </div>
                 <div class="form-control-help" id="dateOfBirth-description">
@@ -375,6 +383,7 @@
                         <option value="limited">Limited</option>
                         <option value="unlimited">Unlimited</option>
                       </select>
+                      <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal07">08</button>
                     </div>
                   </div>
                 </div>

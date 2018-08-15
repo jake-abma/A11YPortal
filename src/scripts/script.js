@@ -3,7 +3,7 @@
 
     if (toggleAnnotationsBtn) { toggleAnnotationsBtn.addEventListener('click', toggleAnnotations); }
     //toggleAnnotationsBtn.onclick = toggleAnnotations;
-    if(location.hash){toggleAnnotations();}
+    if(location.hash.indexOf('#annot') == 0){toggleAnnotations();}
 
     function toggleAnnotations() {
         var annotationSelectors = ['.btn-annot', '.annotations', '.table-of-contents', '.btn-annot-outline', '.modal-annot', '.body'];
@@ -39,6 +39,8 @@
         };
     });
 
+//    REPLACING BOOTSTRAP.JS CODE
+//
 //    var toggleTriggers = Array.from(document.querySelectorAll('[data-toggle='collapse']'));
 //
 //    window.addEventListener('click', function (ev) {
