@@ -81,7 +81,7 @@ gulp.task('htaccess', () =>
     .pipe(gulp.dest('dist'))
 );
 
-gulp.task('build', gulp.parallel('html', 'images', 'js', 'scss', 'css', 'fonts', 'pdf', 'psd', 'zip', 'htaccess'));
+gulp.task('build', gulp.parallel('html', 'images', 'js', 'css', 'scss', 'fonts', 'pdf', 'psd', 'zip', 'htaccess'));
 
 
 gulp.task('valid', function () {
