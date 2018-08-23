@@ -1,0 +1,264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Select All"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Sites/A11YPortal"
+	],
+	"file_history":
+	[
+		"/Sites/A11YPortal/src/training/fundamentals/disabilities.html",
+		"/Sites/A11YPortal/src/sitemap/sitemap-guidelines.html",
+		"/Sites/A11YPortal/src/training/code/semantic-structure-and-navigation.html",
+		"/Sites/A11YPortal/src/basics/essentials/principles.html",
+		"/Sites/A11YPortal/src/guidelines/code/forms.html",
+		"/Sites/A11YPortal/src/guidelines/code/audio-and-video.html",
+		"/Sites/A11YPortal/src/guidelines/code/scripts-and-dynamic-content.html",
+		"/Sites/A11YPortal/src/training/fundamentals/home.html",
+		"/Sites/A11YPortal/src/training/fundamentals/designing-an-accessible-user-experience.html",
+		"/Sites/A11YPortal/src/training/fundamentals/guidelines.html",
+		"/Sites/A11YPortal/src/training/design/images-svg-and-canvas.html",
+		"/Sites/A11YPortal/src/training/design/visual-design-and-colors.html",
+		"/Sites/A11YPortal/src/basics/essentials/design-annotations.html",
+		"/Sites/A11YPortal/src/basics/presentations/intro-to-a11y.html",
+		"/Sites/A11YPortal/src/basics/presentations/a11y-apis.html",
+		"/Sites/A11YPortal/src/guidelines/fundamentals/summary.html",
+		"/Sites/A11YPortal/src/guidelines/fundamentals/principles.html",
+		"/Sites/A11YPortal/src/guidelines/fundamentals/checklists.html",
+		"/Sites/A11YPortal/src/guidelines/fundamentals/references.html",
+		"/Sites/A11YPortal/src/guidelines/design/links.html",
+		"/Sites/A11YPortal/src/guidelines/content/editorial.html",
+		"/Sites/A11YPortal/src/guidelines/content/text-equivalents.html",
+		"/Sites/A11YPortal/src/basics/fundamentals/dos-and-donts.html",
+		"/Sites/A11YPortal/src/training/code/android.html",
+		"/Sites/A11YPortal/src/training/code/ios.html",
+		"/Sites/A11YPortal/src/training/code/wai-aria.html",
+		"/Sites/A11YPortal/src/training/quiz/design.html",
+		"/Sites/A11YPortal/src/training/specials/accessible-name.html",
+		"/Sites/A11YPortal/src/training/specials/design-annotations.html",
+		"/Sites/A11YPortal/src/training/specials/getting-started.html",
+		"/Sites/A11YPortal/src/training/specials/review-audit.html",
+		"/Sites/A11YPortal/src/training/specials/specials-template.html",
+		"/Sites/A11YPortal/src/training/specials/tables.html",
+		"/Sites/A11YPortal/src/training/specials/tables2.html",
+		"/Sites/A11YPortal/src/training/specials/wcag.html",
+		"/Sites/A11YPortal/src/training/testing/screen-reader-testing.html",
+		"/Sites/A11YPortal/src/training/testing/testing-methods-and-tools.html",
+		"/Sites/A11YPortal/src/about/fundamentals/contact.html",
+		"/Sites/A11YPortal/src/basics/essentials/glossary.html",
+		"/Sites/A11YPortal/src/basics/fundamentals/how-tos.html",
+		"/Sites/A11YPortal/src/basics/essentials/personas.html",
+		"/Sites/A11YPortal/src/basics/essentials/tools.html",
+		"/Sites/A11YPortal/src/basics/fundamentals/getting-started.html",
+		"/Sites/A11YPortal/src/basics/fundamentals/responsibilities.html",
+		"/Sites/A11YPortal/src/basics/videos/a11ycasts.html",
+		"/Sites/A11YPortal/src/guidelines/code/focus.html",
+		"/Sites/A11YPortal/src/guidelines/content/notifications.html",
+		"/Sites/A11YPortal/src/guidelines/design/images.html",
+		"/Sites/A11YPortal/src/guidelines/design/structure.html",
+		"/Sites/A11YPortal/src/guidelines/design/visual-design.html",
+		"/Sites/A11YPortal/src/guidelines/e-documents/pdf.html",
+		"/Sites/A11YPortal/src/guidelines/e-documents/word.html",
+		"/Sites/A11YPortal/src/guidelines/fundamentals/testing.html",
+		"/Sites/A11YPortal/src/training/code/dynamic-updates.html",
+		"/Sites/A11YPortal/src/training/content/editorial.html",
+		"/Sites/A11YPortal/src/training/design/form-labels-instructions-and-validation.html",
+		"/Sites/A11YPortal/src/training/design/multimedia-animations-and-motion.html",
+		"/Sites/A11YPortal/src/training/fundamentals/laws.html",
+		"/Sites/A11YPortal/src/training/fundamentals/myths.html",
+		"/Sites/A11YPortal/src/training/quiz/code.html",
+		"/Sites/A11YPortal/src/training/quiz/content.html",
+		"/Sites/A11YPortal/src/training/quiz/fundamentals.html",
+		"/Sites/A11YPortal/src/training/quiz/native.html",
+		"/Sites/A11YPortal/src/training/quiz/testing.html",
+		"/Sites/A11YPortal/src/training/quiz/various.html",
+		"/Sites/A11YPortal/src/training/quiz/web.html",
+		"/Sites/A11YPortal/src/training/various/input-methods.html",
+		"/Sites/A11YPortal/src/training/various/program-management.html",
+		"/Sites/A11YPortal/src/sitemap/sitemap-basics.html",
+		"/Sites/A11YPortal/src/sitemap/sitemap-about.html",
+		"/Sites/A11YPortal/src/sitemap/sitemap-good-bad.html",
+		"/Sites/A11YPortal/src/sitemap/sitemap-training.html",
+		"/Sites/A11YPortal/src/index.html",
+		"/Sites/A11YPortal/src/styles/_lists.scss",
+		"/Sites/A11YPortal/src/styles/libs/bootstrap/_buttons.scss",
+		"/Sites/A11YPortal/src/styles/_buttons.scss",
+		"/Sites/A11YPortal/src/styles/libs/bootstrap/bootstrap.scss",
+		"/Sites/A11YPortal/src/styles/libs/bootstrap/bootstrap.processed.css",
+		"/Sites/A11YPortal/src/styles/style.scss",
+		"/Sites/A11YPortal/src/styles/libs/bootstrap/_variables.scss",
+		"/Sites/A11YPortal/src/styles/_utilities.scss",
+		"/Users/jakeabma/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Sites/A11YPortal/src/styles/_typography.scss"
+	],
+	"find":
+	{
+		"height": 1056.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "a11yportal.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
