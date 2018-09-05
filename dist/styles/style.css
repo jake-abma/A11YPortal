@@ -3084,6 +3084,10 @@ code {
   color: #D03940;
   background-color: #f7f7f9; }
 
+ul:not([class]) li,
+.list-unstyled li {
+  padding: 8px 0; }
+
 .list-group {
   max-width: 100%; }
 
@@ -3118,8 +3122,7 @@ code {
 
 .list-checklist > li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: .5rem; }
+  padding: 8px 0 8px 20px; }
   .list-checklist > li:before {
     font-family: company-name-icons;
     speak: none;
@@ -3137,7 +3140,7 @@ code {
     font-size: 14px;
     font-size: .875rem;
     left: 0;
-    top: 5px;
+    top: 12px;
     color: #349651; }
   .list-checklist > li a {
     color: inherit;

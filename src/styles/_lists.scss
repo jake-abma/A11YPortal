@@ -4,6 +4,16 @@
 // List-linklist
 //----------
 
+
+ul:not([class]),
+.list-unstyled {
+
+  li {
+    padding: 8px 0;
+  }
+
+}
+
 // List-group
 
 .list-group {
@@ -64,8 +74,7 @@
   
   > li {
     position: relative;
-    padding-left: 20px;
-    margin-bottom: .5rem;
+    padding: 8px 0 8px 20px;
     
     &:before {
       font-family: company-name-icons;
@@ -84,7 +93,7 @@
       font-size: 14px;
       font-size: .875rem;
       left: 0;
-      top: 5px;
+      top: 12px;
       color: #349651;
     }
     
