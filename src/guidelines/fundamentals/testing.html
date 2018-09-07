@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to test - Fundamentals - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
-	<link rel="stylesheet" href="../../styles/prism.css">
+  <link rel="stylesheet" href="../../styles/prism.css">
 </head>
 
 <body id="totop">
@@ -113,7 +113,7 @@
 
           <div class="col-md-7">
 
-            <div class="card gs-highway-content">
+            <div class="card">
               <div class="card-block">
                 
                 <h2 class="card-title" id="title-introduction">Introduction</h2>
@@ -121,6 +121,24 @@
                 <p class="lead"><strong>Testing for Inclusive Design</strong></p>
                 
                 <p>The accessibility features and basics of how to test content using screen readers are covered here for Android and iOS. This section will be added to over time.</p>
+
+                <ol>
+                  <li>Visual Inspection</li>
+                  <li>Page Structure</li>
+                  <li>Interactive Components</li>
+                </ol>
+
+                <h3 class="heading-s mt-0">Heuristic analysis</h3>
+                <p class="mb-3">Start guessing, Identify, Guess</p>
+
+                <h3 class="heading-s mt-0">Write down possible focus points</h3>
+                <p class="mb-3">Put it on paper, Name, Place, Focus issue, Expected result</p>
+
+                <h3 class="heading-s mt-0">Start inspection</h3>
+                <p class="mb-3">Do the inspect, Left / right - top / bottom, Tab key, SR: arrows left /right</p>
+
+                <h3 class="heading-s mt-0">Annotate failures</h3>
+                <p class="mb-3">What's wrong?, which / where / when, how to reproduce</p>
 
               </div>
             </div>
@@ -132,7 +150,7 @@
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
@@ -185,11 +203,13 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">1.1 Heuristic analysis</h3>
-                      <p class="mb-3">Start guessing</p>
+                      <h3 class="heading-s mt-0">Focus</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Identify</li>
-                        <li>Guess</li>
+                        <li>All interactive elements must be focusable and inactive elements must not be focusable.</li>
+                        <li>When focused, all actionable and focusable elements must have a visible state change.</li>
+                        <li>Content order must be logical.</li>
+                        <li>Actionable content must be navigable in a meaningful sequence.</li>
+                        <li>Alternative input methods must be supported.</li>
                       </ul>
                     </div>
                   </li>
@@ -197,13 +217,11 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">1.2 Write down possible focus points</h3>
-                      <p class="mb-3">Put it on paper</p>
+                      <h3 class="heading-s mt-0">Consistency</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Name</li>
-                        <li>Place</li>
-                        <li>Focus issue</li>
-                        <li>Expected result</li>
+                        <li>Links in different places referring to the same page are identified consistently.</li>
+                        <li>The look and sound of a control, object or element should inform the user how to interact with it.</li>
+                        <li>Unless there is a recognised convention, such as for navigation, do not use links that are styled to look like buttons.</li>
                       </ul>
                     </div>
                   </li>
@@ -211,12 +229,12 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">1.3 Start inspection</h3>
-                      <p class="mb-3">Do the inspect</p>
+                      <h3 class="heading-s mt-0">Responsive / Content resizing</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Left / right - top / bottom</li>
-                        <li>Tab key</li>
-                        <li>SR: arrows left /right</li>
+                        <li>Users must be able to control font sizing</li>
+                        <li>Interface (UI) scaling must be possible.</li>
+                        <li>All breakpoints of responsive design must be tested by changing viewport size or zoom.</li>
+                        <li>Reflow of content is presented without loss of information or functionality.</li>
                       </ul>
                     </div>
                   </li>
@@ -225,11 +243,11 @@
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>
                     
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">1.4 Annotate failures</h3>
-                      <p class="mb-3">What's wrong?</p>
+                      <h3 class="heading-s mt-0">Color / Contrast</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>which / where / when</li>
-                        <li>how to reproduce</li>
+                        <li>The colour of text and background content must have sufficient contrast.</li>
+                        <li>The colour of interactive components and background must have sufficient contrast.</li>
+                        <li>Information or meaning must not be conveyed by colour only.</li>
                       </ul>
                     </div>
                   </li>
@@ -242,18 +260,6 @@
           </div>
 
           <div class="col-md-5">
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">What to check:</h3>
-                <ul class="list-icons list-linklist">
-                  <li><a href="../../guidelines/fundamentals/summary.html#focus" class="link-ts"><span>Focus</span></a></li>
-                  <li><a href="../../guidelines/design/visual-design.html#consistency" class="link-ts"><span>Consistency</span></a></li>
-                  <li><a href="../../guidelines/design/visual-design.html#content-resizing" class="link-ts"><span>Responsive / Content resizing</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#visual-design" class="link-ts"><span>Color / Contrast</span></a></li>
-                </ul>
-              </div> 
-            </div>
 
             <div class="card">
               <div class="card-block">
@@ -277,6 +283,21 @@
                   <li><a href="../../basics/essentials/tools.html#cca" class="link-ts"><span>Contrast Analyser</span></a></li>
                 </ul>
               </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Guidelines</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/fundamentals/summary.html#focus" class="link-ts"><span>Focus</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#visible-focus" class="link-ts"><span>Visible focus</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#consistency" class="link-ts"><span>Consistency</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#content-resizing" class="link-ts"><span>Responsive / Content resizing</span></a></li>
+                  <li><a href="../../guidelines/fundamentals/summary.html#visual-design" class="link-ts"><span>Color / Contrast</span></a></li>
+                </ul>
+              </div> 
             </div>
 
           </div>
@@ -375,19 +396,6 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title">What to check:</h3>
-                <ul class="list-icons list-linklist">
-                  <li><a href="../../advanced/code/semantic-structure-and-navigation.html#navigation-between-pages" class="link-ts"><span>Menu's</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#structure" class="link-ts"><span>Headings</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#links" class="link-ts"><span>Links</span></a></li>
-                  <li><a href="../../guidelines/content/text-equivalents.html#visual-formatting" class="link-ts"><span>Lists</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#text-equivalents" class="link-ts"><span>Images</span></a></li>
-                </ul>
-              </div> 
-            </div>
-
-            <div class="card">
-              <div class="card-block">
                 <h3 class="card-title">Process steps:</h3>                
                 <ul class="list-unstyled">
                   <li>2.1 Heuristic analysis</li>
@@ -408,6 +416,26 @@
                   <li><a href="../../basics/essentials/tools.html#code-helpers" class="link-ts"><span>Code inspector</span></a></li>
                 </ul>
               </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Guidelines</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/fundamentals/summary.html#structure" class="link-ts"><span>Headings</span></a></li>
+                  <li><a href="../../guidelines/fundamentals/summary.html#links" class="link-ts"><span>Links</span></a></li>
+                  <li><a href="../../guidelines/content/text-equivalents.html#visual-formatting" class="link-ts"><span>Lists</span></a></li>
+                  <li><a href="../../guidelines/fundamentals/summary.html#text-equivalents" class="link-ts"><span>Images</span></a></li>
+                </ul>
+
+                <h4 class="heading-s">Advanced</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../advanced/code/semantic-structure-and-navigation.html#navigation-between-pages" class="link-ts"><span>Menu's</span></a></li>
+                </ul>
+
+              </div> 
             </div>
 
           </div>
@@ -507,17 +535,6 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title">What to check:</h3>
-                <ul class="list-icons list-checklist">
-                  <li>Complex components (future link)</li>
-                  <li>Related components / relationships (future link)</li>
-                  <li>Custom Components (future link)</li>
-                </ul>
-              </div> 
-            </div>
-
-            <div class="card">
-              <div class="card-block">
                 <h3 class="card-title">Process steps:</h3>
                 <ul class="list-unstyled">
                   <li>3.1 Heuristic analysis</li>
@@ -538,6 +555,20 @@
                   <li><a href="../../basics/essentials/tools.html#code-helpers" class="link-ts"><span>Code inspector</span></a></li>
                 </ul>
               </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Advanced</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Complex components (future link)</li>
+                  <li>Related components / relationships (future link)</li>
+                  <li>Custom Components (future link)</li>
+                </ul>
+
+              </div> 
             </div>
 
           </div>
@@ -654,7 +685,7 @@
   <script src="../../scripts/libs/tether/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.min.js"></script>
   <script src="../../scripts/script.js"></script>
-	<script src="../../scripts/prism.js"></script>
+  <script src="../../scripts/prism.js"></script>
 
 </body>
 
