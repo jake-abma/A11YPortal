@@ -89,7 +89,7 @@
     <nav class="full-cover" role="navigation" aria-labelledby="title-toc">
       <div class="container">
 
-        <h1 class="main-heading">Testing</h1>
+        <h1 class="main-heading">Testing Method Guidelines: How-To</h1>
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
@@ -128,17 +128,22 @@
                   <li>Interactive Components</li>
                 </ol>
 
-                <h3 class="heading-s mt-0">Heuristic analysis</h3>
+                <h3 class="heading-m mt-0">Procedure</h3>
+
+                <h4 class="heading-xs mt-0">Heuristic analysis</h4>
                 <p class="mb-3">Start guessing, Identify, Guess</p>
 
-                <h3 class="heading-s mt-0">Write down possible focus points</h3>
+                <h4 class="heading-xs mt-0">Write down possible focus points</h4>
                 <p class="mb-3">Put it on paper, Name, Place, Focus issue, Expected result</p>
 
-                <h3 class="heading-s mt-0">Start inspection</h3>
+                <h4 class="heading-xs mt-0">Start inspection</h4>
                 <p class="mb-3">Do the inspect, Left / right - top / bottom, Tab key, SR: arrows left /right</p>
 
-                <h3 class="heading-s mt-0">Annotate failures</h3>
+                <h4 class="heading-xs mt-0">Annotate failures</h4>
                 <p class="mb-3">What's wrong?, which / where / when, how to reproduce</p>
+
+                <h3 class="heading-m mt-0">How to Test</h3>
+                <p>Bla, bla bla</p>
 
               </div>
             </div>
@@ -165,6 +170,19 @@
 
               </div>
               
+            </div>            
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title">Which Tools to use:</h3>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../basics/essentials/tools.html#wave" class="link-ts"><span>WAVE - Automated Tool</span></a></li>
+                  <li><a href="../../basics/essentials/tools.html#axe" class="link-ts"><span>aXe - Automated Tool</span></a></li>
+                  <li><a href="../../basics/essentials/tools.html#screen-readers" class="link-ts"><span>Screen Reader</span></a></li>
+                  <li><a href="../../basics/essentials/tools.html#cca" class="link-ts"><span>Contrast Analyser</span></a></li>
+                  <li><a href="../../basics/essentials/tools.html#code-helpers" class="link-ts"><span>Code inspector</span></a></li>
+                </ul>
+              </div>
             </div>
 
           </div>
@@ -245,9 +263,9 @@
                     <div class="media-body">
                       <h3 class="heading-s mt-0">Color / Contrast</h3>
                       <ul class="list-icons list-checklist mb-0">
+                        <li>Information or meaning must not be conveyed by colour only.</li>
                         <li>The colour of text and background content must have sufficient contrast.</li>
                         <li>The colour of interactive components and background must have sufficient contrast.</li>
-                        <li>Information or meaning must not be conveyed by colour only.</li>
                       </ul>
                     </div>
                   </li>
@@ -275,28 +293,33 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title">Which Tools to use:</h3>
-                <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/tools.html#wave" class="link-ts"><span>WAVE - Automated Tool</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#axe" class="link-ts"><span>aXe - Automated Tool</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#screen-readers" class="link-ts"><span>Screen Reader</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#cca" class="link-ts"><span>Contrast Analyser</span></a></li>
-                </ul>
-              </div>
-            </div>
+                <h3 class="card-title">Test Procedures & Results</h3>
 
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Jump to:</h3>
-
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s"><a href="../../guidelines/fundamentals/summary.html#focus" class="link-ts"><span>Focus</span></a></h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../guidelines/fundamentals/summary.html#focus" class="link-ts"><span>Focus</span></a></li>
-                  <li><a href="../../guidelines/design/visual-design.html#visible-focus" class="link-ts"><span>Visible focus</span></a></li>
-                  <li><a href="../../guidelines/design/visual-design.html#consistency" class="link-ts"><span>Consistency</span></a></li>
-                  <li><a href="../../guidelines/design/visual-design.html#content-resizing" class="link-ts"><span>Responsive / Content resizing</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#visual-design" class="link-ts"><span>Color / Contrast</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#testing-focusable-elements" class="link-ts"><span>Focusable elements test</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#testing-visible-focus" class="link-ts"><span>Actionable elements test</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#testing-content-order" class="link-ts"><span>Content order test</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#testing-focus-order" class="link-ts"><span>Focus order test</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#testing-alternative-input-methods" class="link-ts"><span>Alternative input methods test</span></a></li>
                 </ul>
+
+                <h4 class="heading-s"><a href="../../guidelines/design/visual-design.html#consistency" class="link-ts"><span>Consistency</span></a></h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/design/visual-design.html#testing-consistency" class="link-ts"><span>Consistency test</span></a></li>
+                </ul>
+
+                <h4 class="heading-s"><a href="../../guidelines/design/visual-design.html#content-resizing" class="link-ts"><span>Responsive / Content resizing</span></a></h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/design/visual-design.html#testing-content-resizing" class="link-ts"><span>Content resizing test</span></a></li>
+                </ul>
+
+                <h4 class="heading-s"><a href="../../guidelines/design/visual-design.html#colour-and-meaning" class="link-ts"><span>Color</span></a> and <a href="../../guidelines/design/visual-design.html#colour-contrast" class="link-ts"><span>Contrast</span></a></h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/design/visual-design.html#testing-colour-and-meaning" class="link-ts"><span>Colour and meaning test</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#testing-colour-contrast" class="link-ts"><span>Colour contrast test</span></a></li>
+                </ul>
+
               </div> 
             </div>
 
@@ -336,9 +359,10 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">Headings</h3>
+                      <h3 class="heading-s mt-0">Containers and Landmarks</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Text</li>
+                        <li>Containers should be used to describe page/screen structure, as supported by the platform.</li>
+                        <li>Use ARIA landmark roles or HTML5 sectioning elements to describe document structure and outline different parts of the page.</li>
                       </ul>
                     </div>
                   </li>
@@ -346,9 +370,10 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">Links</h3>
+                      <h3 class="heading-s mt-0">Unique Titles and Headings</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Text</li>
+                        <li>All pages or screens must be uniquely and clearly identifiable.</li>
+                        <li>Content must provide a logical and hierarchical heading structure, as supported by the platform.</li>
                       </ul>
                     </div>
                   </li>
@@ -356,9 +381,23 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">Lists</h3>
+                      <h3 class="heading-s mt-0">Links Vs. Buttons</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Text</li>
+                        <li>Link and navigation text must uniquely describe the target or function of the link or item.</li>
+                        <li>Links to alternative formats must indicate that an alternative is opening.</li>
+                        <li>Repeated links to the same resource must be combined within a single link.</li>
+                        <li><a href="../../good-bad/home.html#annotModal13">Use links to go to another page, use buttons when you stay on the same page</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="media mb-4" role="group">
+                    <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>                    
+                    <div class="media-body">
+                      <h3 class="heading-s mt-0">Lists, Tables and Semantics</h3>
+                      <ul class="list-icons list-checklist mb-0">
+                        <li>Visual formatting alone must not be used to convey meaning.</li>
+                        <li>Provide non-visual alternatives, such as semantic code, hidden text or accessibility labels.</li>
                       </ul>
                     </div>
                   </li>
@@ -367,9 +406,12 @@
                     <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span>
                     
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">Images</h3>
+                      <h3 class="heading-s mt-0">Images and Text equivalents</h3>
                       <ul class="list-icons list-checklist mb-0">
-                        <li>Text</li>
+                        <li>Images of text should be avoided.</li>
+                        <li>Alternatives must briefly describe the editorial intent or purpose of the image, object, or element.</li>
+                        <li>Decorative images must be hidden from assistive technology.</li>
+                        <li>Visual formatting alone must not be used to convey meaning.</li>
                       </ul>
                     </div>
                   </li>
@@ -397,31 +439,37 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title">Which Tools to use:</h3>
-                <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/tools.html#wave" class="link-ts"><span>WAVE - Automated Tool</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#axe" class="link-ts"><span>aXe - Automated Tool</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#screen-readers" class="link-ts"><span>Screen Reader</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#code-helpers" class="link-ts"><span>Code inspector</span></a></li>
-                </ul>
-              </div>
-            </div>
+                <h3 class="card-title">Test Procedures & Results</h3>
 
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Jump to:</h3>
-
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s"><a href="../../guidelines/design/structure.html#containers-and-landmarks" class="link-ts"><span>Containers and landmarks</span></a></h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../guidelines/fundamentals/summary.html#structure" class="link-ts"><span>Headings</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#links" class="link-ts"><span>Links</span></a></li>
-                  <li><a href="../../guidelines/content/text-equivalents.html#visual-formatting" class="link-ts"><span>Lists</span></a></li>
-                  <li><a href="../../guidelines/fundamentals/summary.html#text-equivalents" class="link-ts"><span>Images</span></a></li>
+                  <li><a href="../../guidelines/design/structure.html#testing-containers-and-landmarks" class="link-ts"><span>Containers and landmarks test</span></a></li>
                 </ul>
 
-                <h4 class="heading-s">Advanced</h4>
+                <h4 class="heading-s"><a href="../../guidelines/design/structure.html#unique-page-screen-titles" class="link-ts"><span>Unique Titles</span></a> and <a href="../../guidelines/design/structure.html#headings" class="link-ts"><span>Headings</span></a></h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../advanced/code/semantic-structure-and-navigation.html#navigation-between-pages" class="link-ts"><span>Menu's</span></a></li>
+                  <li><a href="../../guidelines/design/structure.html#testing-unique-page-screen-titles" class="link-ts"><span>Unique page/screen titles test</span></a></li>
+                  <li><a href="../../guidelines/design/structure.html#testing-headings" class="link-ts"><span>Headings test</span></a></li>
+                </ul>
+
+                <h4 class="heading-s"><a href="../../guidelines/fundamentals/summary.html#links" class="link-ts"><span>Links</span></a></h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/design/links.html#testing-descriptive-links" class="link-ts"><span>Descriptive links test</span></a></li>
+                  <li><a href="../../guidelines/design/links.html#testing-links-to-alternative-formats" class="link-ts"><span>Links to alternative formats test</span></a></li>
+                  <li><a href="../../guidelines/design/links.html#testing-combining-repeated-links" class="link-ts"><span>Combining repeated links test</span></a></li>
+                </ul>
+
+                <h4 class="heading-s"><a href="../../guidelines/content/text-equivalents.html#visual-formatting" class="link-ts"><span>Lists, Tables and Semantics</span></a></h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/content/text-equivalents.html#testing-visual-formatting" class="link-ts"><span>Visual formatting test</span></a></li>
+                </ul>
+
+                <h4 class="heading-s"><a href="../../guidelines/design/images.html" class="link-ts"><span>Images</span></a> and <a href="../../guidelines/fundamentals/summary.html#text-equivalents" class="link-ts"><span>Text equivalents</span></a></h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/design/images.html#testing-images-of-text" class="link-ts"><span>Images of text</span></a></li>
+                  <li><a href="../../guidelines/content/text-equivalents.html#testing-alternatives-for-non-text-content" class="link-ts"><span>Alternatives for non-text content test</span></a></li>
+                  <li><a href="../../guidelines/content/text-equivalents.html#testing-decorative-content" class="link-ts"><span>Decorative content test</span></a></li>
+                  <li><a href="../../guidelines/content/text-equivalents.html#testing-visual-formatting" class="link-ts"><span>Visual formatting test</span></a></li>
                 </ul>
 
               </div> 
@@ -508,18 +556,6 @@
                   <li>3.2 Write down possible focus points</li>
                   <li>3.3 Start inspection</li>
                   <li>3.4 Annotate failures</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Which Tools to use:</h3>
-                <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/tools.html#wave" class="link-ts"><span>WAVE - Automated Tool</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#axe" class="link-ts"><span>aXe - Automated Tool</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#screen-readers" class="link-ts"><span>Screen Reader</span></a></li>
-                  <li><a href="../../basics/essentials/tools.html#code-helpers" class="link-ts"><span>Code inspector</span></a></li>
                 </ul>
               </div>
             </div>
