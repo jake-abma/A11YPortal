@@ -56,12 +56,12 @@
                 <span class="sr-only">(current)</span></a>
                 <ul class="pagination pagination-navbar">
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/home.html">Home</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/principles.html">Principles</a></li>
                   <li class="page-item">
                     <a class="page-link active" href="../../guidelines/fundamentals/testing.html" aria-current="page">Testing<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/checklists.html">Checklists</a></li>
+                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
+                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/principles.html">Principles</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/references.html">References</a>
                   </li>
                 </ul>
@@ -89,7 +89,7 @@
     <nav class="full-cover" role="navigation" aria-labelledby="title-toc">
       <div class="container">
 
-        <h1 class="main-heading">Testing Method Guidelines: How-To</h1>
+        <h1 class="main-heading">A Functional Testing Method: How-To</h1>
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
@@ -118,9 +118,11 @@
                 
                 <h2 class="card-title" id="title-introduction">Introduction</h2>
                 
-                <p class="lead"><strong>Testing for Inclusive Design</strong></p>
+                <p class="lead"><strong>Functional testing for Inclusive Design</strong></p>
                 
-                <p>The accessibility features and basics of how to test content using screen readers are covered here for Web, Android and iOS. This section will be added to over time.</p>
+                <p>The accessibility features and basics of how to functional test content using heuristic analysis, tools and screen readers are covered here for Web, Android and iOS.</p>
+
+                <h3 class="heading-m mt-0">Basic testing steps:</h3>
 
                 <ol>
                   <li>Visual Inspection</li>
@@ -128,22 +130,28 @@
                   <li>Interactive Components</li>
                 </ol>
 
-                <h3 class="heading-m mt-0">Procedure</h3>
+                <h3 class="heading-m mt-0">Process steps:</h3>
 
-                <h4 class="heading-xs mt-0">Heuristic analysis</h4>
-                <p class="mb-3">Start guessing, Identify, Guess</p>
+                <p>At each step you'll perform the following actions.</p>
 
-                <h4 class="heading-xs mt-0">Write down possible focus points</h4>
-                <p class="mb-3">Put it on paper, Name, Place, Focus issue, Expected result</p>
+                <dl>
+                  <dt>1. Heuristic analysis</dt>
+                  <dd>At this first step you'll start guessing what the functional expectation is. Identify what you see, what should be read aloud, what should happen step-by-step, and how this should be constructed. DON'T use a mouse, keyboard or other input method yet. In principle this information must already be present at the <a href="/basics/essentials/design-annotations.html">Design Annotation</a> fase.</dd>
+                  <dt>2. Write down possible focus points</dt>
+                  <dd>For each focus point where you're not sure if this is done properly put it on paper:
+                    <ul>
+                      <li>Name and place</li>
+                      <li>Focus point and expected result</li>
+                    </ul> 
+                  </dd>
+                  <dt>3. Start inspection</dt>
+                  <dd>Next we start the actual inspection. For latin languages this means we start from top to bottom and from left to right. We will use the tab key on the keyboard, see what will happen when we use the mouse and with screen readers we'll use the left and right arrow keys on a keyboard or swipe left and right with a mobile device. Tools will be used to support the inspection. Is everything communicated as expected and logical?</dd>
+                  <dt>4. Annotate failures</dt>
+                  <dd>When the result is NOT what's expected, note the possible fail. Please make sure it's clear which part may have a fail, where this exactly happens, under which conditions, and how to reproduce.</dd>
+                </dl>
 
-                <h4 class="heading-xs mt-0">Start inspection</h4>
-                <p class="mb-3">Do the inspect, Left / right - top / bottom, Tab key, SR: arrows left /right</p>
-
-                <h4 class="heading-xs mt-0">Annotate failures</h4>
-                <p class="mb-3">What's wrong?, which / where / when, how to reproduce</p>
-
-                <h3 class="heading-m mt-0">How to Test</h3>
-                <p>Bla, bla bla</p>
+                <h3 class="heading-m mt-0">Test Procedures & Results:</h3>
+                <p>At each step you'll find the most common accessibility checkpoints with a short explanation on what's expected. When not sure on how to test these, there are links for each checkpoint at the "Test Procedures & Results" sections where you'll be taken to the guideline with an explanation on how to test.</p>
 
               </div>
             </div>
@@ -156,6 +164,11 @@
               <div class="card-block">
 
                 <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Basics</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../basics/essentials/tools.html" class="link-ts"><span>Tools</span></a></li>
+                </ul>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
@@ -466,7 +479,7 @@
 
                 <h4 class="heading-s"><a href="../../guidelines/design/images.html" class="link-ts"><span>Images</span></a> and <a href="../../guidelines/fundamentals/summary.html#text-equivalents" class="link-ts"><span>Text equivalents</span></a></h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../guidelines/design/images.html#testing-images-of-text" class="link-ts"><span>Images of text</span></a></li>
+                  <li><a href="../../guidelines/design/images.html#testing-images-of-text" class="link-ts"><span>Images of text test</span></a></li>
                   <li><a href="../../guidelines/content/text-equivalents.html#testing-alternatives-for-non-text-content" class="link-ts"><span>Alternatives for non-text content test</span></a></li>
                   <li><a href="../../guidelines/content/text-equivalents.html#testing-decorative-content" class="link-ts"><span>Decorative content test</span></a></li>
                   <li><a href="../../guidelines/content/text-equivalents.html#testing-visual-formatting" class="link-ts"><span>Visual formatting test</span></a></li>
